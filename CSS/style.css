@@ -1,0 +1,22 @@
+html {
+    font-size: 15px;
+}
+
+/****** Nav Bar ******/
+#brand-name {
+    font-weight: 600;
+}
+
+.style-item {
+    color: rgb(235, 235, 235) !important;
+    font-weight: 500;
+}
+
+/*effect - nav*/
+
+a.effect-nav:hover {
+    color: rgb(122, 197, 231) !important;
+}
+    
+
+
