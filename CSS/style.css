@@ -6,6 +6,10 @@ html {
 #brand-name {
     font-weight: 600;
 }
+#nav-config{
+    background-color: rgb(0, 0, 0) !important;
+    margin-bottom: 300px;
+}
 
 .style-item {
     color: rgb(235, 235, 235) !important;
@@ -13,10 +17,47 @@ html {
 }
 
 /*effect - nav*/
-
 a.effect-nav:hover {
     color: rgb(122, 197, 231) !important;
 }
-    
+ 
+/****** Hero Content ******/
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.spacing {
+    margin-bottom: 500px;
+}
+
+#button-1 {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#enter {
+    color: white;
+}
+
+#link-button:hover {
+    text-decoration: none;
+}
+#link-button h1:hover {
+    color: rgb(122, 197, 231) !important;
+}
+
+#logo-hero,
+#portfolio,
+#about,
+#contact {
+    padding-top: 100px;
+}
+
+
 
 
