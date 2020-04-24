@@ -8,7 +8,6 @@ html {
 }
 #nav-config{
     background-color: rgb(0, 0, 0) !important;
-    margin-bottom: 300px;
 }
 
 .style-item {
@@ -20,7 +19,7 @@ html {
 a.effect-nav:hover {
     color: rgb(122, 197, 231) !important;
 }
- 
+
 /****** Hero Content ******/
 body {
     background-image: url("../images/background.jpg");
@@ -31,6 +30,7 @@ body {
 }
 
 .spacing {
+    margin-top: 150px;
     margin-bottom: 500px;
 }
 
@@ -47,8 +47,23 @@ body {
 #link-button:hover {
     text-decoration: none;
 }
+
 #link-button h1:hover {
     color: rgb(122, 197, 231) !important;
+}
+
+.link-post {
+    color: darkkhaki;
+    font-weight: 600;
+}
+
+.link-post:hover {
+    text-decoration: none;
+    color: rgb(122, 197, 231) !important;
+}
+
+.main-text {
+    font-size: 20px;
 }
 
 #logo-hero,
@@ -56,6 +71,57 @@ body {
 #about,
 #contact {
     padding-top: 100px;
+}
+
+.social-button {
+    color: rgb(255, 255, 255);
+}
+
+.social-button:hover {
+    text-decoration: none;
+    color: rgb(122, 197, 231);
+}
+/****** effect img ******/
+.img-config figure {
+	position: relative;
+}
+.img-config figure::before {
+	position: absolute;
+	top: 0;
+	left: 0%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 35%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.130) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.130) 100%);
+	-webkit-transform: skewX(-16deg);
+	transform: skewX(-16deg);
+}
+.img-config figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	55% {
+		left: 55%;
+	}
+}
+@keyframes shine {
+	55% {
+		left: 55%;
+	}
+}
+.about-logo figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.about-logo figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 
